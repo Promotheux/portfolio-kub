@@ -1,0 +1,267 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Copyright (c) 2016 Nikhil Maheshwari
+ */
+     
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+ html {
+  font-family: 'Lato', cursive;
+ }
+
+.logo {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 100px;
+}
+
+#logo-container {
+  height: 57px;
+  margin-bottom: 32px;
+}
+
+#logo-container h5 {
+  margin-top:-15px;
+}
+
+.side-bar {
+  background: #222729 url('../images/overlay.png');
+}
+
+.side-link {
+  text-align: right;
+}
+
+.side-cv {
+  text-align:right;
+}
+
+.active-side-link {
+  background-color: black;
+}
+
+.side-link-icon {
+  position: relative;
+  bottom: -5px;
+}
+
+.side-link-footer {
+  position: fixed;
+  top: 80%;
+  width: 100%;
+}
+
+.side-link-footer a {
+  cursor: pointer;
+  color: #FFF !important;
+  display: inline !important;
+  padding: 0px !important;
+}
+
+.fixed-navicon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: #ffb300;
+}
+
+h1 {
+  font-size: 3.3rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.float-left {
+  float:left;
+  width:48%
+}
+
+.float-right {
+  float:right;
+  width:48%
+}
+
+.modal-footer a {
+  color: #fff !important;
+}
+
+footer.page-footer {
+  padding-top: 0px;
+}
+
+header, main, footer {
+  padding-left: 240px;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+.port-btn {
+  margin-bottom:10px;
+}
+
+.side-link-footer a:hover {
+  color:#ffb300 !important;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+#about p, #lookingfor p{
+  text-align:left;
+  width:80%;
+  margin-left:10%;
+}
+
+@media only screen and (min-width: 800px) {
+  .cv-button {
+    margin-left:70%;
+  }
+}
+
+#skills ul {
+  text-align:left;
+  width:80%;
+  margin-left:10%;
+}
+
+#skills ul li {
+ padding-bottom:15px;
+ position:relative;
+}
+#skills ul li:before {
+ content:"";
+ display:block;
+ background-color:#c5cae9;
+ height:5px;
+ width:100%;
+ position:absolute;
+ bottom:7px;
+ border-radius:1px;
+ z-index:0;
+}
+
+#skills ul li:after{
+ content:'';
+ display:block;
+ background-color:#ffb300;
+ height:5px;
+ bottom:7px;
+ position:absolute;
+}
+
+#skills .skill[data-state='5']:after{
+  width:5%;
+}
+
+#skills .skill[data-state='10']:after{
+  width:10%;
+}
+
+#skills .skill[data-state='15']:after{
+  width:15%;
+}
+
+#skills .skill[data-state='20']:after{
+  width:20%;
+}
+
+#skills .skill[data-state='25']:after{
+  width:25%;
+}
+
+#skills .skill[data-state='30']:after{
+  width:30%;
+}
+
+#skills .skill[data-state='35']:after{
+  width:35%;
+}
+
+#skills .skill[data-state='40']:after{
+  width:40%;
+}
+
+#skills .skill[data-state='45']:after{
+  width:45%;
+}
+
+#skills .skill[data-state='50']:after{
+  width:50%;
+}
+
+#skills .skill[data-state='55']:after{
+  width:55%;
+}
+
+#skills .skill[data-state='60']:after{
+  width:60%;
+}
+
+#skills .skill[data-state='65']:after{
+ width:65%;
+}
+
+#skills .skill[data-state='70']:after{
+  width:70%;
+}
+
+#skills .skill[data-state='75']:after{
+  width:75%;
+}
+
+#skills .skill[data-state='80']:after{
+  width:80%;
+}
+
+#skills .skill[data-state='85']:after{
+  width:85%;
+}
+
+#skills .skill[data-state='90']:after{
+  width:90%;
+}
+
+#skills .skill[data-state='95']:after{
+  width:95%;
+}
+
+#skills .skill[data-state='100']:after{
+  width:100%;
+}

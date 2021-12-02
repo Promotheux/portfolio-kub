@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  web:
+    image: trafex/php-nginx
+    labels:
+      - traefik.http.routers.nielsvdschaaf.rule=Host(`nielsvdschaaf.nl`)
+      - traefik.http.routers.nielsvdschaaf.tls=true
+      - traefik.http.routers.nielsvdschaaf.tls.certresolver=cloudflare
+      - traefik.port=80
+    volumes:
+      - ./www:/var/www/html
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
+

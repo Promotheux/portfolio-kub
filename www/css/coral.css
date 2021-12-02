@@ -1,0 +1,144 @@
+:root {
+    --font-size-3:18px;
+    --font-family-primary: Apercu Pro, sans-serif;
+}
+
+#tab-COMMENTS {
+    display:block;
+    width:100%;
+}
+.coral-tabBar {
+    border-bottom: initial;
+}
+
+.coral-tabBar button {
+    color:#0063af;
+}
+
+.coral-tabBar-tab {
+    border:0;
+    background-color:transparent;
+}
+
+.coral-tabBar-tab-active::before, .coral-tabBar-configure::before {
+    height:0 !important;
+    width:0 !important;
+    display:hidden;
+    content:initial;
+}
+
+.coral-tabBar-comments {
+    text-align: left;
+    margin-left: 0;
+    padding-top: 14px;
+    padding-left: 0px;
+    border: 0;
+    display: inline-grid;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#tabPane-COMMENTS > div {
+    display:flex;
+    flex-direction: column;
+}
+
+#tabPane-COMMENTS > div > div:nth-child(1){
+    order:1;
+}
+
+#tabPane-COMMENTS > div > div:nth-child(2){
+    order:3;
+}
+
+#tabPane-COMMENTS > div > div:nth-child(3){
+    order:2;
+}
+
+.coral-streamFooter {
+    width:0;
+    height:0;
+    opacity: 0;
+}
+.coral-indent > div > div > div:nth-child(1) {
+    position: relative;
+}
+
+.coral-indent > div > div > div:nth-child(1) > div:nth-child(1){
+    display:block;
+    width:100%;
+}
+
+.coral-indent > div > div > div:nth-child(1) > div:nth-child(1) button {
+    font-size:18px;
+    font-weight: bolder;
+}
+
+.coral-indent > div > div > div:nth-child(1) > div:nth-child(2){
+    display:flex;
+    flex-direction: column;
+}
+
+.coral-indent > div > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+    order:2;
+    position: absolute;
+    right:0;
+}
+
+.coral-indent time{
+   font-weight: normal !important;
+   color:#b3b3b3;
+   font-size:18px;
+}
+
+.coral-indent > div > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+    order:1;
+}
+
+:root .dvhn{
+    --palette-primary-500: #0063af;
+    --palette-text-500:#000 !important;
+    --pallete-gray-100:transparent;
+}
+
+.dvhn .coral-tabBar {
+    border-top:4px solid #0063af;
+}
+
+.dvhn .coral-tabBar-comments {
+    font-family: Apercu Pro, sans-serif;
+    text-transform: uppercase;
+}
+
+.dvhn .coral-userTag {
+    background-color: #0063af !important;
+}
+
+.dvhn .coral-indent-1, .dvhn .coral-indent-3, .dvhn .coral-indent-5, .dvhn .coral-indent-7, .dvhn .coral-indent-9 {
+    background-color: rgba(218, 235, 247, 0.4);
+}
+
+:root .lc {
+    --palette-primary-500: #485fc7;
+    --palette-text-500:#000 !important;
+    --pallete-gray-100:transparent;
+}
+
+.lc .coral-tabBar {
+    border-top:4px solid #485fc7;
+}
+
+.lc .coral-tabBar-comments {
+    text-transform: initial;
+    font-family: Reckless, serif;
+    font-weight: 600;
+    font-size:21px;
+}
+
+.lc .coral-userTag {
+    background-color: #485fc7 !important;
+}
+
+.lc .coral-indent-1, .lc .coral-indent-3, .lc .coral-indent-5, .lc .coral-indent-7, .lc .coral-indent-9 {
+    background-color: rgba(232, 234, 255, 0.4);
+}
