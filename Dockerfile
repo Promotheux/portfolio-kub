@@ -1,2 +1,2 @@
-FROM webdevops/php-nginx:7.3
-COPY ./www /app
+FROM nginx
+COPY ./www /usr/share/nginx/html
